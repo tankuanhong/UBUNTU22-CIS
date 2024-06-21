@@ -331,7 +331,7 @@ ubtu22cis_rule_4_1_4_11: true
 # Configure Logging
 ## journald
 ubtu22cis_rule_4_2_1_1_1: true
-ubtu22cis_rule_4_2_1_1_2: true
+ubtu22cis_rule_4_2_1_1_2: false
 ubtu22cis_rule_4_2_1_1_3: true
 ubtu22cis_rule_4_2_1_1_4: true
 ubtu22cis_rule_4_2_1_1: true
