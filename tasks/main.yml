@@ -68,7 +68,7 @@
 
       - name: Check ubtu22cis_grub_user password variable has been changed | if password blank or incorrect type and not being set
         ansible.builtin.assert:
-            that: ( ubtu22cis_password_set_grub_user.stdout | length > 10 ) and '$y$' in ubtu22cis_password_set_grub_user.stdout
+            that: ( ubtu22cis_grub_user_passwd | length > 10 ) and '$y$' in ubtu22cis_grub_user_passwd
             fail_msg: "Grub User {{ ubtu22cis_grub_user }} has no password set or incorrect encryption"
             success_msg: "Grub User {{ ubtu22cis_grub_user }} has a valid password set to be used in single user mode"
         when:
